@@ -12,7 +12,13 @@ def ft_plant_factory() -> None:
 
 
 class Plant:
-    def __init__(self, name: str, height: float, days: int, rate: float = 1.0) -> None:
+    def __init__(
+        self,
+        name: str,
+        height: float,
+        days: int,
+        rate: float = 1.0,
+    ) -> None:
 
         self.name = name.capitalize()
         self.height = height
