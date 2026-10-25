@@ -18,12 +18,12 @@ def parse_input() -> dict:
 
         # ErrorCheck3: check value is int
         try:
-            value = int(value)
+            value_int = int(value)
         except ValueError as e:
             print(f"Quantity error for '{key}': {e}")
             continue
 
-        inventory[key] = value
+        inventory[key] = value_int
     return inventory
 
 

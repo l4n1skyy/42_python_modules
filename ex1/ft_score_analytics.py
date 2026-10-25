@@ -12,7 +12,8 @@ def process_args() -> list[int]:
             scores += [tmp]
     if len(scores) < 1:
         print(
-            "No scores provided. Usage: python3 ft_score_analytics.py <score1> <score2> ..."
+            "No scores provided. Usage: python3 "
+            "ft_score_analytics.py <score1> <score2> ..."
         )
     return scores
 
