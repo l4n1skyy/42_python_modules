@@ -11,7 +11,7 @@ def check_reagent(name: str, purpose: str) -> bool:
     try:
         importlib.import_module(name)
         version = importlib.metadata.version(name)
-    except ImportError, importlib.metadata.PackageNotFoundError:
+    except (ImportError, importlib.metadata.PackageNotFoundError):
         print(f"[MISSING] {name} - not installed")
         return False
     print(f"[OK] {name} ({version}) - {purpose}")
