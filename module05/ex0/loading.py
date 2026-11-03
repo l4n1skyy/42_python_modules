@@ -29,10 +29,14 @@ def print_install_help(missing: list[str]) -> None:
 def print_pip_vs_poetry() -> None:
     print("\npip vs Poetry:")
     print(
-        "  requirements.txt declares what to install; pip resolves it at install time."
+        "  requirements.txt declares what to install; "
+        "pip resolves it at install time."
     )
     print("  pyproject.toml declares the same constraints, and Poetry pins")
-    print("  the resolved versions in poetry.lock so every install is identical.")
+    print(
+        "  the resolved versions in poetry.lock "
+        "so every install is identical."
+    )
 
 
 def main() -> None:

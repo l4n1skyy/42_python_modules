@@ -42,7 +42,10 @@ def main() -> None:
 
     mode = os.environ.get("MATRIX_MODE", "").strip() or "development"
     if mode not in MODES:
-        print(f"WARNING: invalid MATRIX_MODE '{mode}', falling back to development.\n")
+        print(
+            f"WARNING: invalid MATRIX_MODE '{mode}', "
+            "falling back to development.\n"
+        )
         mode = "development"
 
     if mode == "production":

@@ -29,7 +29,9 @@ def test_error_types() -> None:
     for i in range(4):
         try:
             garden_operations(i)
-        except (ValueError, ZeroDivisionError, FileNotFoundError, TypeError) as e:
+        except (
+            ValueError, ZeroDivisionError, FileNotFoundError, TypeError
+        ) as e:
             print(f"Operation {i} caught an error: {e}")
 
     print("\nAll error types tested successfully!")
