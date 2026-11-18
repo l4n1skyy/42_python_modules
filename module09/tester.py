@@ -4,9 +4,9 @@ from typing import Any
 
 from pydantic import ValidationError
 
-from alien_contact import AlienContact
-from space_crew import SpaceMission
-from space_station import SpaceStation
+from ex0.space_station import SpaceStation
+from ex1.alien_contact import AlienContact
+from ex2.space_crew import SpaceMission
 
 DATA = Path(__file__).parent / "generated_data"
 
